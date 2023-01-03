@@ -24,7 +24,7 @@ import lombok.ToString;
 public class EucharistCalendars {
     @Id
     @Column(name = "pk_eucharist_calendars")
-    public int pkEucharistCalendars;
+    public long pkEucharistCalendars;
     @Column(name = "hour", nullable = true, unique = false)
     public String hour;
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)

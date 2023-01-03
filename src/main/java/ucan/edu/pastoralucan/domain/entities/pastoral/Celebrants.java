@@ -39,5 +39,5 @@ public class Celebrants {
     private boolean status;
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "fk_pastoral_member", referencedColumnName = "pk_pastoral_member", nullable = false, unique = false)
-    private int fkPastoralMember;
+    private PastoralMembers fkPastoralMember;
 }

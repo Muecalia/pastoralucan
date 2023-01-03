@@ -16,7 +16,7 @@ import lombok.ToString;
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "pk_contacts")
+@Table(name = "tb_contacts")
 public class Contacts {
     @Id
     @Column(name = "pk_contact")

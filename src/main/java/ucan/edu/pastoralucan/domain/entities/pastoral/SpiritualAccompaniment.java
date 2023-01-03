@@ -25,7 +25,7 @@ import lombok.ToString;
 @Table(name = "tb_spiritual_accompaniment")
 public class SpiritualAccompaniment {
     @Id
-    @Column(name = "status")
+    @Column(name = "pk_spiritual_accompaniment")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long pkSpiritualAccompaniment;
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
